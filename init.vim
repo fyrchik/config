@@ -16,6 +16,13 @@ colorscheme evening
 "  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 "endif
 
+call plug#begin('~/.vim/plugged')
+
+" blame inside nvim + automatic ctags generation so cool!
+Plug 'https://github.com/tpope/vim-fugitive.git'
+
+call plug#end()
+
 " Highlight trailing whitespaces
 augroup highlighting
     autocmd BufRead * highlight ExtraWhitespace ctermbg=red guibg=#ff9a13
