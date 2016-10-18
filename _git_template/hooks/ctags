@@ -1,0 +1,2 @@
+#!/bin/sh
+ctags --tag-relative -R -f "$GIT_DIR/tags"

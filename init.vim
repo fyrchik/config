@@ -2,7 +2,7 @@
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 set number
 
-set rtp+=~/.vim
+set rtp+=~/.config/nvim
 
 " Enable TRUE COLOR support
 set termguicolors
