@@ -4,6 +4,9 @@ set number
 
 set rtp+=~/.config/nvim
 
+" Yank into clipboard
+set clipboard+=unnamedplus
+
 " Enable TRUE COLOR support
 set termguicolors
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
