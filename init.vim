@@ -26,6 +26,10 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 
 call plug#end()
 
+" wanna give this a try
+" http://www.linusakesson.net/programming/syntaxhighlighting/index.php
+syntax off
+
 " Highlight trailing whitespaces
 augroup highlighting
     autocmd BufRead * highlight ExtraWhitespace ctermbg=red guibg=#ff9a13
