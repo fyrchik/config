@@ -1,2 +1,2 @@
 #!/bin/sh
-ctags --tag-relative -R -f "$GIT_DIR/tags"
+find . -name '*.pm' | xargs ctags --tag-relative=yes -R -f $GIT_DIR/tags --languages=+perl --exclude='!(.pm)'

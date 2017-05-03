@@ -23,12 +23,22 @@ call plug#begin('~/.vim/plugged')
 
 " blame inside nvim + automatic ctags generation so cool!
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/tpope/vim-vinegar.git'
+"Plug 'https://github.com/scrooloose/nerdtree.git'
+"Plug 'https://github.com/scrooloose/nerdcommenter.git'
 
 call plug#end()
 
+" surround line with first arg
+"function! s:Surr(c)
+"    exe 's/\%V\(.*\)\%V/' . a:c . '\1' . a:c . '/'
+"endfunction
+
+command! -nargs=1 WrapSelection call s:Surr(<f-args>)
+
 " wanna give this a try
 " http://www.linusakesson.net/programming/syntaxhighlighting/index.php
-syntax off
+" syntax off
 
 " Highlight trailing whitespaces
 augroup highlighting
