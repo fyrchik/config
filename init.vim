@@ -7,6 +7,9 @@ set rtp+=~/.config/nvim
 " Yank into clipboard
 set clipboard+=unnamedplus
 
+" Case insensitive search
+set ignorecase smartcase
+
 " Enable TRUE COLOR support
 set termguicolors
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -15,15 +18,13 @@ colorscheme evening
 
 " Tell (neo)Vim which characters to show for expanded TABs,
 " trailing whitespace, and end-of-lines. VERY useful!
-"if &listchars ==# 'eol:$'
-"  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-"endif
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 call plug#begin('~/.vim/plugged')
 
 " blame inside nvim + automatic ctags generation so cool!
 Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'https://github.com/tpope/vim-vinegar.git'
+"Plug 'https://github.com/tpope/vim-vinegar.git'
 "Plug 'https://github.com/scrooloose/nerdtree.git'
 "Plug 'https://github.com/scrooloose/nerdcommenter.git'
 
